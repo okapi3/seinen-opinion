@@ -5,34 +5,10 @@ Template Name: 17goals
 get_header();
 ?>
 
-<div class="page-link">
-    <ul class="page-link__list">
-        <li class="page-link__list-item">
-            <a href="<?php echo home_url('/') ?>sdgs/" class="page-link__list-link page-link__list-link--circle">SDGs</a>
-        </li>
-        <li class="page-link__list-item">
-            <a href="<?php echo home_url('/') ?>sdgs/mission/" class="page-link__list-link page-link__list-link--2">our<br>mission</a>
-        </li>
-        <li class="page-link__list-item">
-            <a href="<?php echo home_url('/') ?>sdgs/what/" class="page-link__list-link page-link__list-link--3">What is<br>SDGs</a>
-        </li>
-        <li class="page-link__list-item">
-            <a href="<?php echo home_url('/') ?>sdgs/17goals/" class="page-link__list-link page-link__list-link--current page-link__list-link--4">17 goals</a>
-        </li>
-        <li class="page-link__list-item">
-            <div class="page-link__list-inner">
-                <span class="page-link__list-link page-link__list-link--5">opinion</span>
-                <!-- リンク有効にする場合はspanをaタグに変更 -->
-            </div>
-        </li>
-        <li class="page-link__list-item">
-            <div class="page-link__list-inner">
-                <span class="page-link__list-link page-link__list-link--6">topics</span>
-                <!-- リンク有効にする場合はspanをaタグに変更 -->
-            </div>
-        </li>
-    </ul>
-</div>
+<?php //サブナビゲーション
+    get_template_part( 'template-parts/sdgs/subnav', 'list' );
+?>
+
 
 <div class="main-contents">
 

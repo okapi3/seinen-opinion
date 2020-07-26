@@ -609,6 +609,15 @@ function ks_get_excerpt($charlength,$id='') {
 	return strip_tags($excerpt);
 }
 
+//文字数限定
+function ks_get_url_from_slug($slug) {
+    //固定ページのスラッグからページを取得
+	$page = get_page_by_path($slug);
+	//ページIDからURLを取得
+	$return = get_permalink( $page->ID );
+	return $return;
+}
+
 //アセット内ファイル表示
 function assets($path="",$key="",$return=""){
     if($key){
@@ -731,9 +740,13 @@ function get_post_number( $post_type = 'post', $op = '<=' ) {
     return sprintf('%03d', $number);
 }
 
-function ks_current_class($key){
-	if( is_page($key) ){
-		echo "page-link__list-link--current";
+function ks_current_class($slug=''){
+	if( $slug ){
+		global $post;
+		$current_slug = $post->post_name;
+		if( $current_slug == $slug ){
+			echo "page-link__list-link--current";
+		}
 	}
 }
 
