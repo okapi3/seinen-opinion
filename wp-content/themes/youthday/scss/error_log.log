@@ -1,0 +1,4 @@
+03/27/20 2:48:37: /var/www/html/youth/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+03/27/20 3:16:28: sdgs-topics.scss - parse error: failed at `line-height: 1em` /var/www/html/youth/wp-content/themes/youthday/scss/sdgs-topics.scss on line 32
+04/02/20 5:13:42: /public_html/rootweb/kosei-kai/youthday/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+04/02/20 5:13:45: /public_html/rootweb/kosei-kai/youthday/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.

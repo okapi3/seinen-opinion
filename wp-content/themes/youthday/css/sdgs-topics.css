@@ -1,0 +1,285 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700');
+@media screen and (max-width: 900px) {
+  .pc {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+h2 {
+  color: #00b3b1;
+  font-size: 40px;
+  margin: 5px 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+h2.tag-title {
+  margin-top: 15px;
+}
+.tag {
+  margin-top: 15px;
+}
+.tag img {
+  height: auto;
+  width: 20px;
+  margin-right: 5px;
+}
+.sdgs-posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.single .post-info {
+    justify-content: flex-start;
+  }
+}
+.sdgs-posts-list.single li {
+  flex-basis: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.single li {
+    margin-bottom: 0px;
+  }
+}
+.sdgs-posts-list.single li h2 {
+  padding: 0 15px;
+}
+.sdgs-posts-list li {
+  flex-basis: calc(100% / 2 - 25px);
+  width: calc(100% / 2 - 25px);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.sdgs-posts-list li .post-info {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #000;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li .post-info {
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+  }
+}
+.sdgs-posts-list li .post-info p {
+  font-size: 40px;
+  color: #888;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 25px 15px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  border-right: solid 1px #000;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li .post-info p {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+.sdgs-posts-list li .post-info p:last-of-type {
+  border-right: none;
+}
+.sdgs-posts-list li .post-info p .small {
+  font-size: 0.5em;
+  line-height: 40px;
+  display: inline-block;
+  padding-right: 5px;
+}
+.sdgs-posts-list li h2 {
+  color: #00b3b1;
+  font-size: 40px;
+  margin: 15px 0;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li h2 {
+    display: none;
+  }
+}
+.sdgs-posts-list li h2 a {
+  color: inherit;
+}
+.sdgs-posts-list li .topics-title {
+  color: #00b3b1;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li .topics-title {
+    width: 45%;
+  }
+}
+.sdgs-posts-list li .topics-title a {
+  color: #00b3b1;
+}
+.sdgs-posts-list li .icatch {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li .icatch {
+    height: 140px;
+    width: 50%;
+    flex-basis: 50%;
+  }
+}
+.sdgs-posts-list li .icatch img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list li .icatch img {
+    height: 100%;
+  }
+}
+.topics-content {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .topics-content {
+    display: block;
+  }
+}
+.topics-content .icatch {
+  flex-basis: 390px;
+  width: 390px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .topics-content .icatch {
+    width: 100%;
+  }
+}
+.topics-content .icatch .tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00b3b1;
+  color: #fff;
+  font: 'M PLUS Rounded 1c', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+}
+.topics-content .icatch .tag a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topics-content .icatch .tag .tag-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  display: block;
+  background: url(/wp-content/themes/youthday/img/sdgs/icon_tag-w.svg);
+  background-size: cover;
+  border: none;
+}
+.topics-content .content {
+  flex-basis: calc(100% - 450px);
+  width: calc(100% - 450px);
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 20px;
+}
+.topics-content .content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  .topics-content .content {
+    width: 100%;
+    font-size: 14px;
+    padding-top: 15px;
+    word-break: break-all;
+  }
+}
+.topics-content .content .tag {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  border-top: dotted 2px #8f8f8f;
+  border-bottom: dotted 2px #8f8f8f;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.topics-content .content .tag img {
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .topics-content .content .tag img {
+    margin-top: 0;
+  }
+}
+.topics-content .content p {
+  line-height: 2em;
+}
+.topics-content .content p:first-of-type {
+  margin-top: 0;
+}
+.topics-content .content p img {
+  max-width: 100%;
+  width: auto;
+}
+.topics-content .content p img.alignleft {
+  float: left;
+  margin-right: 20px;
+}
+.topics-content .content p img.alignright {
+  float: right;
+  margin-left: 20px;
+}
+.wp-pagenavi .page-numbers {
+  padding: 10px 15px;
+  background: #00b3b1;
+  color: #fff;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.wp-pagenavi .page-numbers.current {
+  background: rgba(0, 179, 177, .5);
+}
+.wp-pagenavi .page-numbers.next, .wp-pagenavi .page-numbers.prev {
+  padding: 10px 18px;
+  background-image: url(/wp-content/themes/youthday/img/sdgs/icon_arrow_right.png);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wp-pagenavi .page-numbers.prev {
+  background-image: url(/wp-content/themes/youthday/img/sdgs/icon_arrow_left.png);
+}

@@ -1,0 +1,430 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 03:22:32
+* VERSION: 1.3.36
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.4.4                                 |7.3.5
+OS__________________: Linux                                 |Darwin
+CREATED_____________: 2020-07-26 14:18:29
+WP VERSION__________: 5.4.2
+DUP VERSION_________: 1.3.36
+DB__________________: 5.7.29
+DB TABLES___________: 17
+DB ROWS_____________: 23,176
+DB FILE SIZE________: 7.98MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.5 | SAPI: fpm-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: nginx/1.16.0
+DOC ROOT____________: "/Users/okapi/WebWorks/seinen-opinion/app/public"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "https://seinenopinion.local/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "/Users/okapi/WebWorks/seinen-opinion/app/public/backup_20200726_[HASH]_20200726141829_archive.zip"
+SIZE________________: 328.03MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' backed-up to .htaccess-200726152232-5f1d9fb88a8a3-duplicator.bak
+- PASS: Existing Apache '.htaccess' was removed
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 03:22:37 - RUNTIME: 4.4702 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 03:28:40
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 8.0.16 -- Build Server: 5.7.29
+FILE SIZE:	dup-database__[HASH].sql (3.2MB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/Users/okapi/WebWorks/seinen-opinion/app/public/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	12
+RENAMED TABLES:	0
+QUERIES RAN:	160
+
+wp_alm: (1)
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (176)
+wp_postmeta: (4101)
+wp_posts: (1354)
+wp_ratings: (6866)
+wp_siteguard_history: (10000)
+wp_siteguard_login: (1)
+wp_term_relationships: (259)
+wp_term_taxonomy: (19)
+wp_termmeta: (0)
+wp_terms: (19)
+wp_usermeta: (194)
+wp_users: (9)
+Removed '30' cache/transient rows
+
+INSERT DATA RUNTIME: 0.5230 sec.
+STEP-2 COMPLETE @ 03:28:41 - RUNTIME: 0.5280 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 03:28:46
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "青年の日"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday"
+path_new______________: "/Users/okapi/WebWorks/seinen-opinion/app/public"
+siteurl_______________: "https://seinenopinion.local"
+url_old_______________: "https://kosei-kai.kpc-test.com/youthday"
+url_new_______________: "https://seinenopinion.local"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_alm"__________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   176][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  4101][PG:   2][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:  1354][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_ratings"______________________________________[ROWS:  6866][PG:   2][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_siteguard_history"____________________________[ROWS: 10000][PG:   3][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_siteguard_login"______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   259][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    19][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:   194][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home/ts5055/kpc-test.com/public_html/kosei-kai/youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  2:"\/home\/ts5055\/kpc-test.com\/public_html\/kosei-kai\/youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  3:"%2Fhome%2Fts5055%2Fkpc-test.com%2Fpublic_html%2Fkosei-kai%2Fyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  4:"\home\ts5055\kpc-test.com\public_html\kosei-kai\youthday" => "/Users/okapi/WebWorks/seinen-opinion/app/public"
+	SEARCH  5:"\\home\\ts5055\\kpc-test.com\\public_html\\kosei-kai\\youthday" => "\/Users\/okapi\/WebWorks\/seinen-opinion\/app\/public"
+	SEARCH  6:"%5Chome%5Cts5055%5Ckpc-test.com%5Cpublic_html%5Ckosei-kai%5Cyouthday" => "%2FUsers%2Fokapi%2FWebWorks%2Fseinen-opinion%2Fapp%2Fpublic"
+	SEARCH  7:"//kosei-kai.kpc-test.com/youthday" ===============> "//seinenopinion.local"
+	SEARCH  8:"\/\/kosei-kai.kpc-test.com\/youthday" ============> "\/\/seinenopinion.local"
+	SEARCH  9:"%2F%2Fkosei-kai.kpc-test.com%2Fyouthday" =========> "%2F%2Fseinenopinion.local"
+	SEARCH 10:"http://seinenopinion.local" ======================> "https://seinenopinion.local"
+	SEARCH 11:"http:\/\/seinenopinion.local" ====================> "https:\/\/seinenopinion.local"
+	SEARCH 12:"http%3A%2F%2Fseinenopinion.local" ================> "https%3A%2F%2Fseinenopinion.local"
+--------------------------------------
+SCANNED:	Tables:17 	|	 Rows:22999 	|	 Cells:171886 
+UPDATED:	Tables:3 	|	 Rows:1359 	|	 Cells:1403 
+ERRORS:		0 
+RUNTIME:	1.332800 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""local""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => simple-google-recaptcha/simple-google-recaptcha.php
+    [1] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 03:28:47 - RUNTIME: 1.3547 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================

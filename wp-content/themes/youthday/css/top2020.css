@@ -1,0 +1,559 @@
+
+/* ---------------------------------------------
+*   content
+--------------------------------------------- */
+#content {
+    margin-top: 95px;
+}
+
+@media screen and (max-width: 767px) {
+    #content {
+        margin-top: 50px;
+    }
+}
+
+/* ---------------------------------------------
+*   keyvisual
+--------------------------------------------- */
+.keyvisual {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual {
+        padding-bottom: 0;
+    }
+}
+
+.keyvisual__txt {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    z-index: 10;
+    margin: 0;
+    width: 2.03125vw;
+    height: 100%;
+    color: #fff;
+    -ms-writing-mode: tb-rl;
+    font-size: 18px;
+    font-family: "MPLUSRounded1c-Bold";
+
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual__txt {
+        top: auto;
+        right: 3%;
+        bottom: 4%;
+        width: 71.33333vw;
+        height: auto;
+        text-align: right;
+    }
+}
+
+.keyvisual__icon {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+    z-index: 10;
+    width: 11.09375vw;
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual__icon {
+        top: 1%;
+        bottom: 0;
+        width: 18.13333vw;
+        height: 18.13333vw;
+    }
+}
+
+.keyvisual__icon img {
+    width: 100%;
+}
+
+.keyvisual__link {
+    position: absolute;
+    bottom: 0;
+    bottom: 1%;
+    left: 19%;
+    z-index: 20;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "MPLUSRounded1c-Bold";
+    width: 100%;
+}
+
+.keyvisual__link:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual__link {
+        bottom: 13.5%;
+        left: 2%;
+        font-size: 4.26667vw;
+    }
+}
+
+.keyvisual__link--right {
+    right: -19%;
+    left: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual__link--right {
+        right: auto;
+        left: 2%;
+    }
+}
+
+.keyvisual__link:link, .keyvisual__link:visited, .keyvisual__link:active {
+    color: #fff;
+}
+
+.keyvisual__link-name {
+    position: relative;
+    margin-left: 1em;
+}
+
+.keyvisual__link-name:before {
+    position: absolute;
+    top: 50%;
+    left: -1em;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    content: "";
+    content: "";
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .keyvisual__link-name:before {
+        width: 2vw;
+        height: 2vw;
+        border-top: 0.26667vw solid #fff;
+        border-right: 0.26667vw solid #fff;
+    }
+}
+
+.keyvisual__link-name--bluegreen {
+    color: #00b3b1;
+}
+
+.keyvisual__link-name--orange {
+    color: #E15E00;
+}
+
+.keyvisual__link-name--red {
+    color: #E50056;
+}
+
+.keyvisual__link-name--green {
+    color: #6DB249;
+}
+
+.swiper-container-fade .swiper-slide {
+    width: 100%;
+}
+
+/* ---------------------------------------------
+*   lead
+--------------------------------------------- */
+.lead {
+    padding-bottom: 60px;
+    font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+    .lead {
+        padding: 0;
+        padding-bottom: 8vw;
+    }
+}
+
+.lead__container {
+	padding: 0 30px;
+	margin-top: -19.53125vw;
+}
+
+@media screen and (max-width: 767px) {
+    .lead__container {
+        padding: 0 3vw;
+    }
+}
+
+.lead__txt {
+    margin: 0;
+    color: #231815;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+@media screen and (min-width: 1281px) {
+    .lead__txt {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead__txt {
+        font-size: 4.53333vw;
+        line-height: 1.9;
+    }
+}
+
+.lead__txt-large {
+    margin: 0;
+    color: #231815;
+    text-align: center;
+    letter-spacing: .2em;
+    font-size: 3vw;
+    font-family: "MPLUSRounded1c-Bold";
+}
+
+@media screen and (min-width: 1281px) {
+    .lead__txt {
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead__txt-large {
+        font-size: 5.86667vw;
+    }
+}
+
+.lead-btn-open {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5625vw;
+    width: 100px;
+    color: #000;
+    text-align: center;
+    font-size: 3vw;
+    font-family: "MPLUSRounded1c-Bold";
+    cursor: pointer;
+}
+
+.lead-btn-open:hover {
+    opacity: 0.75;
+}
+
+@media screen and (min-width: 1281px) {
+    .lead-btn-open {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead-btn-open {
+        font-size: 3.33333vw;
+    }
+}
+
+.lead-btn-open:after {
+    position: absolute;
+    top: -1vw;
+    left: 50%;
+    display: block;
+    width: 7.8vw;
+    height: 7.8vw;
+    border-top: 1px solid #0A0A0A;
+    border-right: 1px solid #0A0A0A;
+    content: "";
+    -webkit-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+}
+
+@media screen and (min-width: 1281px) {
+    .lead-btn-open:after {
+        top: -35px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead-btn-open:after {
+        top: -4.66667vw;
+        width: 13.33333vw;
+        height: 13.33333vw;
+        border-top: 0.2vw solid #0A0A0A;
+        border-right: 0.2vw solid #0A0A0A;
+    }
+}
+
+.lead-btn-close {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-family: "MPLUSRounded1c-Bold";
+    cursor: pointer;
+}
+
+.lead-btn-close:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 767px) {
+    .lead-btn-close {
+        margin-top: 8.66667vw;
+        font-size: 3.33333vw;
+    }
+}
+
+.lead-btn-close:after {
+    position: absolute;
+    top: -1.17vw;
+    left: 50%;
+    display: block;
+    width: 7.8vw;
+    height: 7.8vw;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    content: "";
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+@media screen and (min-width: 1281px) {
+    .lead-btn-close:after {
+        width: 100px;
+        height: 100px;
+        top: -15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead-btn-close:after {
+        top: -2.66667vw;
+        width: 13.33333vw;
+        height: 13.33333vw;
+        border-top: 0.2vw solid #fff;
+        border-right: 0.2vw solid #fff;
+    }
+}
+
+/* ---------------------------------------------
+*   lead-open
+--------------------------------------------- */
+.lead-open {
+    display: none;
+    padding: 0 10px;
+    padding-top: 3.125vw;
+    padding-bottom: 1.95312vw;
+    background: url(../img/top/img_lead_02.jpg) 0 0 no-repeat;
+    background-size: cover;
+    font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .lead-open {
+        padding: 0;
+        padding-top: 4vw;
+        padding-bottom: 5.33333vw;
+        margin-bottom: 4vw;
+    }
+}
+
+.lead-open__txt {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2.3vw;
+    line-height: 1.9;
+}
+
+@media screen and (min-width: 1281px) {
+    .lead-open__txt {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead-open__txt {
+        font-size: 4vw;
+    }
+}
+
+.lead-open__txt-small {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.9vw;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1281px) {
+    .lead-open__txt-small {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lead-open__txt-small {
+        font-size: 3.33333vw;
+    }
+}
+
+/* ---------------------------------------------
+*   pdf-list
+--------------------------------------------- */
+.pdf-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 0 3.125vw;
+    padding-top: 4.6875vw;
+    padding-right: 5.46875vw;
+    padding-bottom: 6.25vw;
+    padding-left: 8.20312vw;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list {
+        display: block;
+        margin: 0 4.66667vw;
+        padding: 0;
+        border: none;
+    }
+}
+
+.pdf-list__item {
+    width: 27%;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__item {
+        margin: 0 auto;
+        margin-bottom: 4.66667vw;
+        width: 100%;
+    }
+}
+
+.pdf-list__item img {
+    width: 100%;
+}
+
+.pdf-list__link {
+    position: relative;
+    display: block;
+}
+
+.pdf-list__link:hover {
+    opacity: 0.75;
+}
+
+.pdf-list__link-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    width: 17.57812vw;
+    height: 17.57812vw;
+    color: #fff;
+    text-align: center;
+    font-size: 1.71875vw;
+
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__link-txt {
+        padding: 3.66667vw 0;
+        width: 100%;
+        height: auto;
+        font-size: 3.6vw;
+        letter-spacing: .1em;
+    }
+}
+
+.pdf-list__link-txt--1 {
+    border-radius: 50%;
+    background-color: #F29600;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__link-txt--1 {
+        border-radius: 13.33333vw;
+    }
+}
+
+.pdf-list__link-txt--2 {
+    background-color: #E95513;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__link-txt--2 {
+        border-radius: 13.33333vw;
+    }
+}
+
+.pdf-list__link-txt--3 {
+    border-radius: 50%;
+    background-color: #8DC21F;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__link-txt--3 {
+        border-radius: 13.33333vw;
+    }
+}
+
+.pdf-list__link-download {
+    position: absolute;
+    right: 0;
+    bottom: -3.125vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    width: 8.59375vw;
+    height: 8.59375vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1.64062vw;
+
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .pdf-list__link-download {
+        display: none;
+    }
+}
+
+.pdf-list__link-download--circle {
+    border-radius: 50%;
+}

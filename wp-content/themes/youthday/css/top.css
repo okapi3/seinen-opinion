@@ -1,0 +1,613 @@
+.snowfall-canvas img,  canvas {
+	-werbkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* 花びら回転 */
+.snowfall-flakes {
+	position: relative;
+	z-index: 1;
+	-werbkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.snowfall-flakes:nth-child(odd) {
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: rotateX;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-name: rotateX;
+}
+ @-webkit-keyframes rotateX {
+ 0% {
+-webkit-transform: rotate(45deg) rotateX(0deg);
+}
+ 100% {
+-webkit-transform: rotate(-45deg) rotateX(360deg);
+}
+}
+ @keyframes rotateX {
+ 0% {
+transform: rotate(45deg) rotateX(0deg);
+}
+ 100% {
+transform: rotate(-45deg) rotateX(360deg);
+}
+}
+
+.ios .snowfall-flakes:nth-child(odd) {
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+}
+/*-----------------------------------------------------------------------------
+風ボタン
+-----------------------------------------------------------------------------*/
+.ios .button_wrap:hover {
+    opacity: 1;
+}
+
+.button_wrap {
+/*	position: absolute;*/
+	/*    right: 10px;*/
+/*	right: 3%;
+	bottom: -18px;*/
+	z-index: 500;
+	width: 118px;
+	height: 103px;
+	text-align: center;
+	background: url(../img/top/button_kaze.png) no-repeat 7px 0;
+	background-size: 90px;
+}
+.button_wrap:hover {
+	opacity: .85;
+	cursor: pointer;
+}
+.clickCount {
+	position: absolute;
+	bottom: -21px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.clickCount:before {
+	position: absolute;
+	left: 50%;
+	top: 27px;
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	border-style: solid;
+	border-width: 8px 10px 0 10px;
+	border-color: #333333 transparent transparent transparent;
+}
+.clickCount:after {
+	position: absolute;
+	left: 50%;
+	top: 26px;
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	border-style: solid;
+	border-width: 8px 10px 0 10px;
+	border-color: rgba(255,255,255,0.85) transparent transparent transparent;
+}
+.clickCount span.click {
+	display: inline-block;
+	margin-bottom: 8px;
+	padding: 5px 5px 4px;
+	border: 1px solid #666;
+	background: rgba(255,255,255,0.85);
+}
+.btn-ani {
+/*	position: relative;
+			z-index: -1;*/
+}
+
+	.btn-ani-inner {
+/*		position: absolute;
+		top: -90px;
+			z-index: -1;
+
+		display: block;
+		width: 100px;
+		height: 108px;
+		background: url(../img/top/btn_ani_s.png) 0 0 no-repeat;
+		animation: sprite-ani 1.5s steps(8, start) infinite;*/
+		
+	}
+.btn-ani-box {
+	position: absolute;
+/*1回目*/
+	/*	right: 3%;*/
+	/*2回目*/
+/*	    right: 5.5%;
+		bottom: -18px; */
+		/*3回目*/
+	    right: 0;
+    top: -135px;
+
+    z-index: 500;
+    width: 118px;
+    height: 103px;
+
+}
+
+.btn-ani {
+				position: absolute;
+	top: 0;
+			width: 100px;
+		height: 108px;
+
+	opacity: 0;
+				z-index: -1;
+
+}
+
+.btn-ani.active {
+	top: -80px;
+	opacity: 1;
+			animation: btn-ani-box 1.5s;
+	-webkit-animation: btn-ani-box 1.5s;
+}
+
+
+.btn-ani-inner {
+		z-index: -1;
+		display: block;
+	width: 0%;
+		height: 0%;
+		max-width: 100px;
+		max-height: 108px;
+		background: url(../img/top/btn_ani_s.png) 0 0 no-repeat;
+		animation: sprite-ani 1.5s steps(7, start) infinite;
+	-webkit-animation: sprite-ani 1.5s steps(7, start) infinite;
+} 
+
+.btn-ani-inner.active {
+			z-index: -1;
+	width: 100%;
+		height: 100%;
+	  opacity: 1;
+} 
+
+
+
+@keyframes sprite-ani {
+  0%   {
+	  background-position: 0 0;}
+  100% {
+	  background-position: 0 -756px;}
+}
+@-webkit-keyframes sprite-ani {
+  0%   {
+	  background-position: 0 0;}
+  100% {
+	  background-position: 0 -756px;}
+}
+@keyframes btn-ani-box {
+	  0%   {
+	top: 0;
+	opacity: 0;}
+	  35% {
+		opacity: 1;
+	}
+  100% {
+	top: -80px;
+	opacity: 1;
+	}
+
+}
+@-webkit-keyframes btn-ani-box {
+	  0%   {
+	top: 0;
+	opacity: 0;}
+	  35% {
+		opacity: 1;
+	}
+  100% {
+	top: -80px;
+	opacity: 1;
+	}
+
+}
+
+/*-----------------------------------------------------------------------------
+動画エリア
+-----------------------------------------------------------------------------*/
+iframe {
+	border: none!important;
+}
+
+.top-movie-area {
+	position:relative;
+	background: url(../img/top/top_bg_line.gif) 0 0;
+	margin-bottom: 55px;
+}
+.top-movie-area::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 7px;
+	background: url(../img/top/top_bg_letter_line_02.gif) repeat-x;
+}
+
+.top-movie-area::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+background: linear-gradient(to bottom, rgba(226,242,240,0) 1%,rgba(226,242,240,0) 76%,rgba(226,242,240,1) 100%);
+}
+.top-movie-area .h1 {
+	position: relative;
+	z-index: 10;
+	margin-bottom: 1em;
+}
+.movie-frame-area {
+max-width: 960px;
+	height: auto;
+margin: 0 auto;
+	padding: 20px 10px;
+	border: none;
+}
+.movie-frame-inner {
+/*	width: 100%;
+    max-width: 960px;
+	margin: 0 auto;*/
+	  position: relative;
+  width: 100%;
+max-width: 960px;
+	margin: 0 auto;
+/*	padding: 20px 10px;*/
+  padding-top: 56.25%;
+}
+.movie-frame {
+/*	width: 100%;
+	background: #000;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+/*.movie-frame #player {
+		box-shadow:0px 0px 18px 13px #e2f2f0;
+}*/
+
+.data-capacity {
+	display: block;
+padding-top: 10px;
+	text-align: right;
+	font-size: 82%;
+}
+
+.letter-box {
+	position: relative;
+/*  z-index:1;*/
+	display: block;
+	background: #fff;
+}
+
+.letter-box-inner {
+	position: relative;
+		z-index: 10;
+/*	widht: 80%;*/
+/*	max-width:  100%;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px 55px 100px;
+}
+.letter-box-inner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+    width: 85px;
+    height: 85px;
+	background: url(../img/top/top_icn_movie.svg) no-repeat;
+	background-size: 100%;
+	
+}
+.wave-block {
+    position: absolute;
+    top: -50px;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+
+.wave-block.wave-2 {
+/*	opacity: .35;*/
+}
+
+.wave-block.wave-3 {
+	position: absolute;
+    top: -60px;
+/*	opacity: .35;*/
+}
+
+.wave-block-inner {
+	display: block;
+	width:1239px;
+	min-width:1239px;
+	height: 135px;
+	background: url(../img/top/top_bg_wave.png) repeat-x 0 0;
+	background-size: 100%;
+/*	-webkit-transform:translate3d(0,0,1px);*/
+/*	transform: translateX(0);*/
+/*	-webkit-transform: translateX(0);*/
+	-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+		-webkit-perspective: 1000;
+	overflow:hidden
+}
+.wave-block.wave-1 .wave-block-inner {
+	animation: waveRepeat 6s linear infinite;
+	-webkit-animation: waveRepeat 6s linear infinite;
+	-webkit-backface-visibility:hidden;
+}
+
+.wave-block.wave-2 .wave-block-inner {
+		background: url(../img/top/top_bg_wave_transparent.png) repeat-x 0 0;
+	background-size: 100%;
+	animation: waveRepeat 25s linear infinite;
+	-webkit-animation: waveRepeat 25s linear infinite;
+	-webkit-backface-visibility:hidden;
+
+}
+.wave-block.wave-3 .wave-block-inner {
+			background: url(../img/top/top_bg_wave_transparent.png) repeat-x 0 0;
+	background-size: 100%;
+	animation: waveRepeat 100s linear infinite;
+	-webkit-animation: waveRepeat 100s linear infinite;
+	-webkit-backface-visibility:hidden;
+}
+
+.ios .wave-block.wave-1 .wave-block-inner {
+		-webkit-animation: waveRepeatWebkit 6s linear infinite;
+	position: relative;
+	left: 0;
+
+/*	-webkit-animation: waveRepeat 6s linear infinite;
+	-webkit-backface-visibility:hidden;*/
+/*	-webkit-animation-name: waveRepeat;
+	-webkit-transition-duration:6s;
+-webkit-transition-timing-function:linear ;*/
+/*		-webkit-backface-visibility:hidden;*/
+/*		-webkit-perspective: 1000;*/
+/*	-webkit-transform: translateX(0);*/
+/* -webkit-transform: translateX(0);
+	-webkit-backface-visibility: hidden;*/
+}
+.ios .wave-block.wave-2 .wave-block-inner,
+.ios .wave-block.wave-3 .wave-block-inner {
+	display: none;
+	animation: none;
+	-webkit-animation: none;
+}
+
+@keyframes waveRepeat {
+    0% { transform: translateX(0);}
+  100% { transform: translateX(-100%);}
+}
+@-webkit-keyframes waveRepeat {
+    0% { -webkit-transform: translateX(0);
+	-webkit-backface-visibility: hidden;}
+  100% { -webkit-transform: translateX(-100%);
+	-webkit-backface-visibility: hidden;}
+}
+@-webkit-keyframes waveRepeatWebkit {
+    0% {left: 0;}
+  100% { left: -1239px;}
+}
+
+/*@-webkit-keyframes waveRepeatWebkit {
+    0% { -webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;}
+  100% { -webkit-transform: translate3d(-100%, 0, 0);
+	-webkit-backface-visibility: hidden;}
+}*/
+/*#wave-block1 {
+  position:absolute;
+top: -88px;
+  left:0;
+	z-index: 1;
+  width:100%;
+	  height:100%;
+  background: none;
+}
+#wave-block2 {
+  position:absolute;
+top: -88px;
+  left:0;
+	z-index: 0;
+  width:100%;
+	  height:100%;
+
+}
+*/
+/*.wave1 {
+  position:absolute;
+	bottom: 0;
+	background:#fff;
+  display:inline-block;
+  height:60%;
+  width:10px;
+  -webkit-animation-name:dostuff;
+  animation-name:dostuff;
+  -webkit-animation-duration:5s;
+  animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+  -webkit-transition-timing-function:ease-in-out;
+}
+.wave2 {
+  position:absolute;
+	bottom: 0;
+	background: rgba(226,242,240,1);
+  display:inline-block;
+  height:60%;
+  width:10px;
+
+  -webkit-animation-name:dostuff;
+  animation-name:dostuff;
+  -webkit-animation-duration:11s;
+  animation-duration:11s;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+  -webkit-transition-timing-function:ease-in-out;
+	opacity: .85;
+}
+
+
+@keyframes dostuff{
+  0%{height:60%}
+  50%{height:40%}
+  100%{height:60%}
+}
+
+@-webkit-keyframes dostuff{
+  0%{height:60%}
+  50%{height:40%}
+  100%{height:60%}
+}*/
+/*-----------------------------------------------------------------------------
+動画エリア02
+-----------------------------------------------------------------------------*/
+.top-movie-area.second-movie {
+    background: none;
+
+}
+.top-movie-area.second-movie::after {
+	background: url(../img/top/top_bg_letter_line.gif) repeat-x;
+}
+
+.top-movie-area.second-movie .h1 {
+	margin-bottom: 0;
+}
+
+.top-movie-area.second-movie .movie-frame-area {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.top-movie-area.second-movie::before,
+.top-movie-area.second-movie .letter-box-inner::before {
+	display: none;
+}
+
+.top-movie-area.second-movie .letter-box-inner {
+max-width: 1000px;
+    padding: 0 15px 25px;
+}
+/*-----------------------------------------------------------------------------
+closeエリア
+-----------------------------------------------------------------------------*/
+.main-inner.close-txt {
+
+}
+.main-inner.close-txt .h1 {
+    margin-bottom: 1.25em;
+}
+.main-inner.close-txt p {
+		text-align: center;
+	font-size: 118%;
+	line-height: 1.6;
+	font-weight: 500;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+	.main-inner {
+    margin-bottom: 0;
+	}
+/*ボタン*/
+.button_wrap:hover {
+	opacity: 1;
+}
+	.btn-ani-box {
+    top: -165px;
+		    right: 10px;
+    width: auto;
+    height: auto;
+}
+	.btn-ani-inner {
+    position: relative;
+    left: -11px;
+}
+.button_wrap {
+/*	right: 2%;*/
+	right: 0;
+	bottom: 0;
+	width: 75px;
+	height: 87px;
+	text-align: center;
+	background: url(../img/top/button_kaze.png) no-repeat 0 0;
+	background-size: 100%;
+}
+.clickCount {
+	position: absolute;
+	left: -5%;
+	bottom: -21px;
+	font-size: .85rem;
+}
+.clickCount span.click {
+	position: relative;
+	left: 0;
+	width: 78px;
+/*		width: auto;*/
+	margin-bottom: 10px;
+	padding: 2px 0;
+}
+.clickCount span.count {
+	font-size: 1.2rem;
+}
+.clickCount:before {
+	left: 50%;
+	top: 18px;
+	margin-left: -8px;
+}
+.clickCount:after {
+	left: 50%;
+	top: 17px;
+	margin-left: -8px;
+}
+/*-----------------------------------------------------------------------------
+動画エリア
+-----------------------------------------------------------------------------*/
+	.movie-frame-area {
+padding-top: 0;
+}
+.data-capacity {
+	text-align:left;
+}
+.letter-box-inner {
+	padding: 0 15px 15px 80px;
+	}
+.letter-box-inner::before {
+	left: 5px;
+    width: 65px;
+    height: 65px;
+	}
+
+
+@media only screen and (max-width: 378px) {
+	.btn-ani-box {
+    top: -165px;
+    right: 1%;
+}
+}
