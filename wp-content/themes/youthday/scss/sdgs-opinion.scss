@@ -1,0 +1,749 @@
+@charset 'utf-8';
+// レスポンシブのブレークポイントの設定
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700');
+@import 'libs/breakpoints';
+@import 'libs/vars';
+@import 'libs/functions';
+@include breakpoints((
+	xlarge:   		( #{_size('large')}, null ), 
+	large:    		( unquote("#{_size('medium')} + 1px"), calc(#{_size('large')}) ),
+	medium:         ( unquote("#{_size('small')} + 1px"), calc(#{_size('medium')})  ),
+	small:    		( null, calc(#{_size('small')})  )
+));
+
+$serif: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+$mplus: 'M PLUS Rounded 1c', sans-serif;
+$op_color: #B28146;
+
+.pc{
+    @media screen and (max-width: _size(large)){
+        display: block;
+    }
+    @media screen and (max-width: _size(medium)){
+        display: none;
+    }
+}
+.sp{
+    @media screen and (min-width: _size(medium)){
+        display: none;
+    }
+    @media screen and (max-width: _size(medium)){
+        display: block;
+    }
+}
+
+h2{
+	font-size: 44px;
+	margin: 5px 0;
+	font-family: $mplus;
+
+	&.post_title{
+		color: $op_color;
+	}
+	
+	@media screen and (max-width: _size(medium)){
+		font-size: 20px;
+	}
+	
+}
+
+
+.sdgs-post{
+	&.opinion{
+		.icatch{
+			margin-bottom: 40px;
+
+			@media screen and (max-width: _size(medium)){
+				margin-bottom: 17px;
+			}
+
+			&.paged{
+				margin-bottom: 20px;
+			}
+		}
+		.post_info{
+			display: flex;
+			margin-bottom: 50px;
+
+			@media screen and (max-width: _size(medium)){
+				display: block;
+				margin-bottom: 19px;
+			}
+
+			p{
+				margin: 0;
+			}
+
+			&.paged{
+				margin-bottom: 65px;
+
+				@media screen and (max-width: _size(medium)){
+					display: flex;
+					flex-direction: column-reverse;
+					margin-bottom: 16px;
+				}
+
+				.aside{
+					@media screen and (max-width: _size(medium)){
+						flex-basis: 100%;
+					}
+				}
+
+				.caption_wrap{
+					flex-basis: calc(100% - 340px);
+
+					@media screen and (max-width: _size(medium)){
+						flex-basis: 100%;
+						margin-bottom: 36px;
+					}
+					.caption{
+						text-align: right;
+						font-size: 24px;
+						font-family: $serif;
+
+						@media screen and (max-width: _size(medium)){
+							font-size: 12px;
+							text-align: left;
+						}
+					}
+				}
+			}
+
+			.aside{
+				width: 305px;
+				flex-basis: 305px;
+				padding-right: 35px;
+				box-sizing: border-box;
+				border-right: solid 1px #000000;
+				margin-right: 35px;
+
+				@media screen and (max-width: _size(medium)){
+					border-right: none;
+					margin-bottom: 12px;
+				}
+
+				p{
+					color: $op_color;
+					font-family: $mplus;
+					margin: 0;
+					line-height: 1em;
+				}
+
+				.number{
+					font-size: 25px;
+					margin-bottom: 13px;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 12.5px;
+						margin-bottom: 6px;
+					}
+				}
+
+				hr.arrow_bottom{
+					border: none;
+					height: 18px;
+					width: 100%;
+					background: url(../img/opinion/icn_bottom.svg) no-repeat;
+					background-position: 80px top;
+					background-size: auto 100%;
+
+					@media screen and (max-width: _size(medium)){
+						display: block;
+						height: 9px;
+						background-position: 40px top;
+					}
+				}
+
+				.name_roman{
+					font-size: 42px;
+					margin-bottom: 19px;
+					@media screen and (max-width: _size(medium)){
+						font-size: 21px;
+						margin-bottom: 10px;
+					}
+				}
+
+				.date{
+					font-size: 37px;
+					@media screen and (max-width: _size(medium)){
+						font-size: 18px;
+					}
+				}
+			}
+
+			.sperker_info{
+
+				@media screen and (max-width: _size(medium)){
+					border-left: solid 1px #000;
+					padding-left: 10px;
+					padding-bottom: 9px;
+				}
+
+				p{
+					font-family: $mplus;
+					margin: 0;
+					line-height: 1em;
+					color: #000;
+					font-size: 30px;
+					margin-bottom: 25px;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+				}
+
+				.name{
+					font-size: 50px;
+					margin-bottom: 19px;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+
+		.post_content{
+			.post_title{
+				margin-top: 0;
+			}
+
+			.post_description{
+				font-family: $serif;
+				font-size: 28px;
+				line-height: 50px;
+
+				@media screen and (max-width: _size(medium)){
+					font-size: 14px;
+					margin-bottom: 18px;
+					line-height: 25px;
+				}
+
+				p{
+					@media screen and (max-width: _size(medium)){
+						margin-top: 0;
+					}
+				}
+			}
+
+			.section{
+				border-top: solid 1px #000000;
+				padding-top: 45px;
+				padding-bottom: 48px;
+
+				@media screen and (max-width: _size(medium)){
+					padding-top: 15px;
+					padding-bottom: 20px;
+				}
+
+				p{
+					color: #000;
+
+					@media screen and (max-width: _size(medium)){
+						margin-top: 0;
+					}
+				}
+
+				h3{
+					font-family: $mplus;
+					font-size: 34px;
+					color: #000;
+					
+					&.question{
+						display: flex;
+						align-items: flex-start;
+
+						@media screen and (max-width: _size(medium)){
+							margin-bottom: 33px;
+						}
+					}
+
+					span{
+						display: block;
+						width: 125px;
+						font-size: 80px;
+						color: $op_color;
+						line-height: 1em;
+						margin-right: 19px;
+
+						@media screen and (max-width: _size(medium)){
+							font-size: 40px;
+						}
+					}
+
+					p{
+						margin: 0;
+						padding-left: 12px;
+						border-left: solid 1px #000;
+						
+						@media screen and (max-width: _size(medium)){
+							font-size: 17px;
+						}
+					}
+				}
+				.answer{
+					p{
+						font-family: $serif;
+						font-size: 28px;
+						line-height: 50px;
+
+						@media screen and (max-width: _size(medium)){
+							font-size: 14px;
+							line-height: 25px;
+						}
+					}
+				}
+
+				.section_image{
+					margin-top: 68px;
+
+					@media screen and (max-width: _size(medium)){
+						margin-top: 16px;
+						margin-bottom: 10px;
+					}
+
+					&.small{
+						width: 250px;
+						height: 250px;
+						display: inline-block;
+						margin-top: 0;
+						vertical-align: top;
+
+						@media screen and (max-width: _size(medium)){
+							width: 125px;
+							height: 125px;
+							margin-bottom: 0;
+						}
+
+						img{
+							width: 100%;
+						}
+
+						&+.caption{
+							display: inline-block;
+							vertical-align: bottom;
+							margin-bottom: 0;
+							padding-left: 24px;
+
+							@media screen and (max-width: _size(medium)){
+								padding-left: 12px;
+							}
+						}
+					}
+				}
+
+				.caption{
+					font-family: $serif;
+					font-size: 24px;
+					line-height: 40px;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 12px;
+						line-height: 20px;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.page_link{
+			border-top: solid 1px #000;
+			padding-top: 32px;
+			display: flex;
+
+			@media screen and (max-width: _size(medium)){
+				padding-top: 14px;
+			}
+
+			li{
+				a{
+					color: $op_color;
+					font-family: $mplus;
+					font-size: 25px;
+					display: block;
+					height: 115px;
+					line-height: 115px;
+					width: 180px;
+					position: relative;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 12px;
+						height: 29px;
+						line-height: 29px;
+						width: 87px;
+
+					}
+
+					&:after{
+						content: '';
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 29px;
+						height: 115px;
+						background: url(../img/opinion/icn_prev.svg);
+						background-size: 100% 100%;
+
+						@media screen and (max-width: _size(medium)){
+							height: 29px;
+							width: 28px;
+						}
+					}
+
+					&.next{
+						&:after{
+							background: url(../img/opinion/icn_next.svg);
+							background-size: 100% 100%;
+							right: 0;
+							left: auto;
+						}
+					}
+
+					&.prev{
+						text-align: right;
+						margin-right: 95px;
+
+						@media screen and (max-width: _size(medium)){
+							margin-right: 45px;
+						}
+					}
+				}
+			}
+		}
+
+		.profile{
+			display: flex;
+			border-top: solid 1px #000;
+			padding-top: 50px;
+
+			@media screen and (max-width: _size(medium)){
+				flex-wrap: wrap;
+				align-items: flex-end;
+			}
+
+			.thumb{
+				flex-basis: 345px;
+				width: 345px;
+				
+				@media screen and (max-width: _size(medium)){
+					flex-basis: 50%;
+					width: 50%;
+				}
+			}
+
+			.profile_text{
+				padding-left: 16px;
+				flex-basis: calc(100% - 345px);
+				width: calc(100% - 345px);
+
+				@media screen and (max-width: _size(medium)){
+					flex-basis: 50%;
+					width: 50%;
+				}
+
+				h3{
+					font-size: 36px;
+					font-family: $mplus;
+					color: #000;
+					margin-bottom: 15px;
+
+					@media screen and (max-width: _size(medium)){
+						font-size: 18px;
+						margin-bottom: 0;
+					}
+				}
+
+				.text{
+					p{
+						font-size: 28px;
+						line-height: 50px;
+						color: #000;
+						font-family: $serif;
+						margin-top: 0;
+						letter-spacing: 0;
+
+						@media screen and (max-width: _size(medium)){
+							font-size: 14px;
+							font-family: $serif;
+							color: #000;
+						}
+					}
+				}
+			}
+
+			.text{
+				&.sp{
+					font-family: $serif;
+					color: #000000;
+					font-size: 14px;
+				}
+			}
+		}
+		.archives{
+			margin-top: 23px;
+			border-top: solid 1px #000;
+
+			h2{
+				color: $op_color;
+				margin-top: 24px;
+				margin-bottom: 30px;
+				line-height: 1em;
+			}
+
+			.archive_list{
+
+				li{
+					display: flex;
+					margin-bottom: 45px;
+
+					@media screen and (max-width: _size(medium)){
+						flex-wrap: wrap;
+						margin-bottom: 25px;
+					}
+
+					.thumb{
+						flex-basis: 600px;
+						width: 600px;
+						height: 350px;
+
+						@media screen and (max-width: _size(medium)){
+							flex-basis: 100%;
+							width: 100%;
+							height: 225px;
+						}
+
+						img{
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+
+					.post_info{
+						flex-basis: calc(100% -600px);
+						width: calc(100% -600px);
+						box-sizing: border-box;
+						padding-left: 35px;
+
+						@media screen and (max-width: _size(medium)){
+							flex-basis: 100%;
+							width: 100%;
+							padding-left: 0;
+							padding-top: 8px;
+							margin-bottom: 0;
+						}
+
+						.aside{
+							width: 100%;
+							border-right: none;
+
+							@media screen and (max-width: _size(medium)){
+								flex-basis: 100%;
+								width: 100%;
+								display: flex;
+								margin-bottom: 0;
+							}
+
+							.number{
+								@media screen and (max-width: _size(medium)){
+									flex-basis: 120px;
+									width: 120px;
+								}
+							}
+
+							.arrow_bottom{
+								@media screen and (max-width: _size(medium)){
+									flex-basis: 20px;
+									width: 20px;
+									height: 37px;
+									background: url(../img/opinion/icn_next.svg) top left no-repeat;
+									background-size: 100% 100%;
+									margin: 0 10px;
+								}
+							}
+
+							.aside_inner{
+								@media screen and (max-width: _size(medium)){
+									flex-basis: calc(100% - 150px);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.post-type-archive-sdgs-opinion{
+	.page-link{
+		.other_opinion{
+			display: none;
+		}
+	}
+}
+
+.page-link{
+	position: relative;
+
+	.other_opinion{
+		width: 200px;
+		height: 100px;
+		border: solid 1px $op_color;
+		border-radius: 60px;
+		display: block;
+		text-align: center;
+		box-sizing: border-box;
+		padding-top: 5px;
+		position: fixed;
+		background: #fff;
+		top: 130px;
+		margin-left: 970px;
+		transition: .5s;
+
+		@media screen and (max-width: _size(medium)){
+			width: 70px;
+			height: 70px;
+			margin-left: 970px;
+			top: 110px;
+		}
+	
+		img{
+			width: 62px;
+			height: auto;
+
+			@media screen and (max-width: _size(medium)){
+				width: 30px;
+			}
+		}
+	
+		p{
+			margin: 0 auto;
+			text-align: center;
+			color: $op_color;
+			font-family: $mplus;
+			font-size: 19px;
+			line-height: 1em;
+			margin-top: -5px;
+
+			@media screen and (max-width: _size(medium)){
+				font-size: 10px;
+				margin-top: -3px;
+			}
+	
+			span{
+				font-size: 13px;
+
+				@media screen and (max-width: _size(medium)){
+					font-size: 7px;
+					display: block;
+				}
+			}
+		}
+
+		&.scrolled{
+			width: 110px;
+			height: 110px;
+			margin-left: 1060px;
+			padding-top: 15px;
+
+			@media screen and (max-width: _size(medium)){
+				width: 70px;
+				height: 70px;
+				margin-left: calc(100% - 110px);
+				padding-top: 8px;
+			}
+			
+			p{
+				display: none;
+
+				@media screen and (max-width: _size(medium)){
+					display: block;
+				}
+			}
+		}
+	}
+	
+}
+
+.sdgs-posts-list{
+	&.opinion{
+		.post-info{
+			@media screen and (max-width: _size(medium)){
+				margin-bottom: 15px;
+			}
+		}
+		li{
+			.post-info{
+				p{
+					@media screen and (max-width: _size(medium)){
+						border-right: none;
+					}
+
+					&.num{
+						@media screen and (max-width: _size(medium)){
+							border-right: solid 1px #888888;
+						}
+					}
+				}
+			}
+		}
+		h2{
+			color: $op_color;
+			margin: 0;
+			margin-bottom: 9px;
+			line-height: 1em;
+		}
+		p{
+			margin: 0;
+
+			&.name_roman{
+				font-size: 19px;
+				color: $op_color;
+				margin-bottom: 10px;
+				line-height: 1em;
+
+				@media screen and (max-width: _size(medium)){
+					font-size: 22px;
+					margin-bottom: 0;
+				}
+			}
+
+			&.term{
+				line-height: 1em;
+				margin-bottom: 10px;
+				font-size: 20px;
+
+				@media screen and (max-width: _size(medium)){
+					font-size: 14px;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.pc_title{
+			padding-top: 10px;
+		}
+}
+}
+
+.opinion{
+	.wp-pagenavi{
+		.page-numbers{
+			background-color: $op_color;
+
+			&.current{
+				background-color: rgba(211, 146, 0, .5);
+			}
+		}
+	}
+}
+
+.page-link{
+	a{
+		font-family: $mplus;
+	}
+}
+

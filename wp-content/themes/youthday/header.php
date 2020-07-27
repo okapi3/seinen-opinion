@@ -46,9 +46,14 @@
 <?php elseif (is_singular('sdgs-topics') || is_tax( 'sdgs-topics-cat' ) || is_archive( 'sdgs-topics' )) :?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs.css" media="all">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-topics.css" media="all">
-<?php elseif (is_page_template('sdgs/what.php') || is_page_template('sdgs/mission.php') || is_page_template('sdgs/sdgs.php') || is_page_template('sdgs/17goals.php') || is_page_template('sdgs/topics.php'))  : ?>
+<?php elseif (is_singular('sdgs-opinion') || is_tax( 'sdgs-opinion-cat' ) || is_archive( 'sdgs-opinion' ) || is_page('opinion')) :?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs.css" media="all">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-topics.css" media="all">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-opinion.css" media="all">
+<?php elseif (is_page_template('sdgs/what.php') || is_page_template('sdgs/mission.php') || is_page_template('sdgs/sdgs.php') || is_page_template('sdgs/17goals.php') || is_page_template('sdgs/topics.php') || is_page_template('sdgs/opinion.php'))  : ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs.css" media="all">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-topics.css" media="all">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-opinion.css" media="all">
 <?php elseif (is_page_template('maintheme/maintheme.php')) : ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/plugin.css" media="all">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/maintheme.css" media="all">
@@ -78,6 +83,9 @@
 	<?php elseif (is_page_template('report-2019/report.php')) : ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top.css" media="all">
 	<?php else : ?><?php endif; ?>
+	<?php if(is_archive( 'sdgs-opinion' )){?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sdgs-opinion.css" media="all">
+	<?php } ?>
 </head>
 
 <body <?php body_class(); ?>>

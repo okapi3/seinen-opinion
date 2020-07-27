@@ -446,7 +446,7 @@ function the_breadcrumb() {
 			$cp_url = home_url( '/' ) . get_post_type_object( get_post_type() )->name;
 	
 			$str .= '<li><a href="' . $cp_url . '">' . $cp_name . '</a></li>';
-			$str .= '<li>' . $post->post_title . '</li>';
+			$str .= '<li>' . str_replace(':br', '', $post->post_title) . '</li>';
 			
 		}
 	
@@ -547,6 +547,17 @@ function the_breadcrumb() {
 
 ////////////////////added 2020.3.26 by Kimura//////////////////////////////
 
+////////////////////added 2020.7.20 by Kimura//////////////////////////////
+
+define('WP_SCSS_ALWAYS_RECOMPILE', true);
+error_reporting(0);
+add_filter('redirect_canonical','pif_disable_redirect_canonical');
+
+function pif_disable_redirect_canonical($redirect_url) {
+    if (is_singular()) $redirect_url = false;
+return $redirect_url;
+}
+
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
 	register_post_type( 'sdgs-topics',
@@ -571,6 +582,38 @@ function create_post_type() {
 	register_taxonomy(
 		'sdgs-topics-cat', 
 		'sdgs-topics', 
+		array(
+		  'hierarchical' => true, 
+		  'update_count_callback' => '_update_post_term_count',
+		  'label' => 'カテゴリー',
+		  'singular_label' => 'カテゴリー',
+		  'public' => true,
+		  'show_ui' => true
+		)
+	);
+
+	register_post_type( 'sdgs-opinion',
+    array(
+      'labels' => array(
+        'name' => __( 'opinion' ),
+        'singular_name' => __( 'sdgs-opinion' )
+      ),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'menu_position' => 4,
+		'supports' => array('title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes'),
+		'has_archive' => true
+
+    )
+  );
+	register_taxonomy(
+		'sdgs-opinion-cat', 
+		'sdgs-opinion', 
 		array(
 		  'hierarchical' => true, 
 		  'update_count_callback' => '_update_post_term_count',
@@ -745,6 +788,13 @@ function ks_current_class($slug=''){
 		global $post;
 		$current_slug = $post->post_name;
 		if( $current_slug == $slug ){
+			echo "page-link__list-link--current";
+		}
+
+		if(is_archive( 'sdgs-opinion' ) && $slug == "opinion"){
+			echo "page-link__list-link--current";
+		}
+		if(is_singular( 'sdgs-opinion' ) && $slug == "opinion"){
 			echo "page-link__list-link--current";
 		}
 	}

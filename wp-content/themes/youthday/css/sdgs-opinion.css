@@ -1,0 +1,676 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700');
+@media screen and (max-width: 900px) {
+  .pc {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+h2 {
+  font-size: 44px;
+  margin: 5px 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+h2.post_title {
+  color: #b28146;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+.sdgs-post.opinion .icatch {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .icatch {
+    margin-bottom: 17px;
+  }
+}
+.sdgs-post.opinion .icatch.paged {
+  margin-bottom: 20px;
+}
+.sdgs-post.opinion .post_info {
+  display: flex;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info {
+    display: block;
+    margin-bottom: 19px;
+  }
+}
+.sdgs-post.opinion .post_info p {
+  margin: 0;
+}
+.sdgs-post.opinion .post_info.paged {
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info.paged {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info.paged .aside {
+    flex-basis: 100%;
+  }
+}
+.sdgs-post.opinion .post_info.paged .caption_wrap {
+  flex-basis: calc(100% - 340px);
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info.paged .caption_wrap {
+    flex-basis: 100%;
+    margin-bottom: 36px;
+  }
+}
+.sdgs-post.opinion .post_info.paged .caption_wrap .caption {
+  text-align: right;
+  font-size: 24px;
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info.paged .caption_wrap .caption {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+.sdgs-post.opinion .post_info .aside {
+  width: 305px;
+  flex-basis: 305px;
+  padding-right: 35px;
+  box-sizing: border-box;
+  border-right: solid 1px #000;
+  margin-right: 35px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .aside {
+    border-right: none;
+    margin-bottom: 12px;
+  }
+}
+.sdgs-post.opinion .post_info .aside p {
+  color: #b28146;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0;
+  line-height: 1em;
+}
+.sdgs-post.opinion .post_info .aside .number {
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .aside .number {
+    font-size: 12.5px;
+    margin-bottom: 6px;
+  }
+}
+.sdgs-post.opinion .post_info .aside hr.arrow_bottom {
+  border: none;
+  height: 18px;
+  width: 100%;
+  background: url(../img/opinion/icn_bottom.svg) no-repeat;
+  background-position: 80px top;
+  background-size: auto 100%;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .aside hr.arrow_bottom {
+    display: block;
+    height: 9px;
+    background-position: 40px top;
+  }
+}
+.sdgs-post.opinion .post_info .aside .name_roman {
+  font-size: 42px;
+  margin-bottom: 19px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .aside .name_roman {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+}
+.sdgs-post.opinion .post_info .aside .date {
+  font-size: 37px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .aside .date {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .sperker_info {
+    border-left: solid 1px #000;
+    padding-left: 10px;
+    padding-bottom: 9px;
+  }
+}
+.sdgs-post.opinion .post_info .sperker_info p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0;
+  line-height: 1em;
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .sperker_info p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+.sdgs-post.opinion .post_info .sperker_info .name {
+  font-size: 50px;
+  margin-bottom: 19px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_info .sperker_info .name {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+.sdgs-post.opinion .post_content .post_title {
+  margin-top: 0;
+}
+.sdgs-post.opinion .post_content .post_description {
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+  font-size: 28px;
+  line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .post_description {
+    font-size: 14px;
+    margin-bottom: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .post_description p {
+    margin-top: 0;
+  }
+}
+.sdgs-post.opinion .post_content .section {
+  border-top: solid 1px #000;
+  padding-top: 45px;
+  padding-bottom: 48px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+.sdgs-post.opinion .post_content .section p {
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section p {
+    margin-top: 0;
+  }
+}
+.sdgs-post.opinion .post_content .section h3 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 34px;
+  color: #000;
+}
+.sdgs-post.opinion .post_content .section h3.question {
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section h3.question {
+    margin-bottom: 33px;
+  }
+}
+.sdgs-post.opinion .post_content .section h3 span {
+  display: block;
+  width: 125px;
+  font-size: 80px;
+  color: #b28146;
+  line-height: 1em;
+  margin-right: 19px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section h3 span {
+    font-size: 40px;
+  }
+}
+.sdgs-post.opinion .post_content .section h3 p {
+  margin: 0;
+  padding-left: 12px;
+  border-left: solid 1px #000;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section h3 p {
+    font-size: 17px;
+  }
+}
+.sdgs-post.opinion .post_content .section .answer p {
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+  font-size: 28px;
+  line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section .answer p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+.sdgs-post.opinion .post_content .section .section_image {
+  margin-top: 68px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section .section_image {
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+}
+.sdgs-post.opinion .post_content .section .section_image.small {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section .section_image.small {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-post.opinion .post_content .section .section_image.small img {
+  width: 100%;
+}
+.sdgs-post.opinion .post_content .section .section_image.small + .caption {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  padding-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section .section_image.small + .caption {
+    padding-left: 12px;
+  }
+}
+.sdgs-post.opinion .post_content .section .caption {
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+  font-size: 24px;
+  line-height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .post_content .section .caption {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-post.opinion .page_link {
+  border-top: solid 1px #000;
+  padding-top: 32px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .page_link {
+    padding-top: 14px;
+  }
+}
+.sdgs-post.opinion .page_link li a {
+  color: #b28146;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 25px;
+  display: block;
+  height: 115px;
+  line-height: 115px;
+  width: 180px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .page_link li a {
+    font-size: 12px;
+    height: 29px;
+    line-height: 29px;
+    width: 87px;
+  }
+}
+.sdgs-post.opinion .page_link li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 29px;
+  height: 115px;
+  background: url(../img/opinion/icn_prev.svg);
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .page_link li a:after {
+    height: 29px;
+    width: 28px;
+  }
+}
+.sdgs-post.opinion .page_link li a.next:after {
+  background: url(../img/opinion/icn_next.svg);
+  background-size: 100% 100%;
+  right: 0;
+  left: auto;
+}
+.sdgs-post.opinion .page_link li a.prev {
+  text-align: right;
+  margin-right: 95px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .page_link li a.prev {
+    margin-right: 45px;
+  }
+}
+.sdgs-post.opinion .profile {
+  display: flex;
+  border-top: solid 1px #000;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .profile {
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}
+.sdgs-post.opinion .profile .thumb {
+  flex-basis: 345px;
+  width: 345px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .profile .thumb {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+.sdgs-post.opinion .profile .profile_text {
+  padding-left: 16px;
+  flex-basis: calc(100% - 345px);
+  width: calc(100% - 345px);
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .profile .profile_text {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+.sdgs-post.opinion .profile .profile_text h3 {
+  font-size: 36px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #000;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .profile .profile_text h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-post.opinion .profile .profile_text .text p {
+  font-size: 28px;
+  line-height: 50px;
+  color: #000;
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+  margin-top: 0;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .profile .profile_text .text p {
+    font-size: 14px;
+    font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+    color: #000;
+  }
+}
+.sdgs-post.opinion .profile .text.sp {
+  font-family: 'font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif';
+  color: #000;
+  font-size: 14px;
+}
+.sdgs-post.opinion .archives {
+  margin-top: 23px;
+  border-top: solid 1px #000;
+}
+.sdgs-post.opinion .archives h2 {
+  color: #b28146;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  line-height: 1em;
+}
+.sdgs-post.opinion .archives .archive_list li {
+  display: flex;
+  margin-bottom: 45px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+.sdgs-post.opinion .archives .archive_list li .thumb {
+  flex-basis: 600px;
+  width: 600px;
+  height: 350px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .thumb {
+    flex-basis: 100%;
+    width: 100%;
+    height: 225px;
+  }
+}
+.sdgs-post.opinion .archives .archive_list li .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sdgs-post.opinion .archives .archive_list li .post_info {
+  flex-basis: calc(100% -600px);
+  width: calc(100% -600px);
+  box-sizing: border-box;
+  padding-left: 35px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .post_info {
+    flex-basis: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 8px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-post.opinion .archives .archive_list li .post_info .aside {
+  width: 100%;
+  border-right: none;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .post_info .aside {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .post_info .aside .number {
+    flex-basis: 120px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .post_info .aside .arrow_bottom {
+    flex-basis: 20px;
+    width: 20px;
+    height: 37px;
+    background: url(../img/opinion/icn_next.svg) top left no-repeat;
+    background-size: 100% 100%;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-post.opinion .archives .archive_list li .post_info .aside .aside_inner {
+    flex-basis: calc(100% - 150px);
+  }
+}
+.post-type-archive-sdgs-opinion .page-link .other_opinion {
+  display: none;
+}
+.page-link {
+  position: relative;
+}
+.page-link .other_opinion {
+  width: 200px;
+  height: 100px;
+  border: solid 1px #b28146;
+  border-radius: 60px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+  position: fixed;
+  background: #fff;
+  top: 130px;
+  margin-left: 970px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion {
+    width: 70px;
+    height: 70px;
+    margin-left: 970px;
+    top: 110px;
+  }
+}
+.page-link .other_opinion img {
+  width: 62px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion img {
+    width: 30px;
+  }
+}
+.page-link .other_opinion p {
+  margin: 0 auto;
+  text-align: center;
+  color: #b28146;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 19px;
+  line-height: 1em;
+  margin-top: -5px;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion p {
+    font-size: 10px;
+    margin-top: -3px;
+  }
+}
+.page-link .other_opinion p span {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion p span {
+    font-size: 7px;
+    display: block;
+  }
+}
+.page-link .other_opinion.scrolled {
+  width: 110px;
+  height: 110px;
+  margin-left: 1060px;
+  padding-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion.scrolled {
+    width: 70px;
+    height: 70px;
+    margin-left: calc(100% - 110px);
+    padding-top: 8px;
+  }
+}
+.page-link .other_opinion.scrolled p {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .page-link .other_opinion.scrolled p {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.opinion .post-info {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.opinion li .post-info p {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.opinion li .post-info p.num {
+    border-right: solid 1px #888;
+  }
+}
+.sdgs-posts-list.opinion h2 {
+  color: #b28146;
+  margin: 0;
+  margin-bottom: 9px;
+  line-height: 1em;
+}
+.sdgs-posts-list.opinion p {
+  margin: 0;
+}
+.sdgs-posts-list.opinion p.name_roman {
+  font-size: 19px;
+  color: #b28146;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.opinion p.name_roman {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-posts-list.opinion p.term {
+  line-height: 1em;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .sdgs-posts-list.opinion p.term {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+.sdgs-posts-list.opinion .pc_title {
+  padding-top: 10px;
+}
+.opinion .wp-pagenavi .page-numbers {
+  background-color: #b28146;
+}
+.opinion .wp-pagenavi .page-numbers.current {
+  background-color: rgba(211, 146, 0, .5);
+}
+.page-link a {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}

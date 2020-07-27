@@ -31,6 +31,26 @@
             </div>
         </li>
     </ul>
+
+    <?php if (is_singular('sdgs-opinion') || is_tax( 'sdgs-opinion-cat' ) || is_archive( 'sdgs-opinion' ) || is_page('opinion')){ ?>
+        <a class="other_opinion" href="<?php echo get_bloginfo('url'); ?>/sdgs-opinion/">
+            <img src="<?php assets("img","opinion/icn_other.svg"); ?>">
+            <p><span>その他の</span>opinion</p>
+        </a>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $(document).on('scroll',function(){
+                    if ($(this).scrollTop() > 50) {
+                        $('.other_opinion').addClass('scrolled');
+                    } else {
+                        $('.other_opinion').removeClass('scrolled');
+                    }
+                });
+
+            });
+        </script>
+    <?php } ?>
 </div>
 
 <!-- page-link__list-link--current -->
